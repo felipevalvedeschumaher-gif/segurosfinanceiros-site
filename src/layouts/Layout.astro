@@ -6,7 +6,8 @@ import floatHtml from "../partials/float.html?raw";
 import headHtml from "../partials/head.html?raw";
 
 const { title, description } = Astro.props;
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const pathname = Astro.url.pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "") || "/";
+const canonical = new URL(pathname, Astro.site).href;
 ---
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
