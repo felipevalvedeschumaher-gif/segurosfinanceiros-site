@@ -1,0 +1,126 @@
+<!-- BARRA DE TOPO INSTITUCIONAL (SUSEP & ARQUITETURA ASTRO/VERCEL) -->
+  <div class="bg-navy-950 text-slate-300 border-b border-white/10 text-xs py-2 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 text-gold-400 font-medium">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+          Autorizada e Regulamentada pela SUSEP
+        </span>
+        <span class="hidden md:inline-block text-white/20">|</span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-slate-400">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold-500"></i>
+          Atuação 100% Nacional • Atendimento Consultivo B2B
+        </span>
+      </div>
+      <div class="flex items-center gap-3 ml-auto">
+        <a href="tel:+551135662664" class="inline-flex items-center gap-1.5 text-slate-200 hover:text-gold-300 font-semibold">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-gold-400"></i>
+          <span>(11) 3566-2664</span>
+        </a>
+        <span class="text-white/20">|</span>
+        <a href="https://wa.me/5511992545976?text=Ol%C3%A1!%20Vim%20pelo%20site%20segurosfinanceiros.com.br%20e%20gostaria%20de%20conversar%20com%20um%20especialista." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-emerald-300 hover:text-emerald-200 font-semibold">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          <span>(11) 99254-5976</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CABEÇALHO / MENU SUPERIOR FIXO -->
+  <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-white/10 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo Institucional -->
+        <a href="/"  class="flex items-center gap-3 text-left group focus:outline-none">
+          <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-gold group-hover:scale-105 transition">
+            <i data-lucide="landmark" class="w-6 h-6 text-navy-950"></i>
+          </div>
+          <div>
+            <span class="block text-base sm:text-lg font-extrabold tracking-tight text-white leading-none">
+              SEGUROS <span class="text-gold-400">FINANCEIROS</span>
+            </span>
+            <span class="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mt-1 font-medium">
+              Advisory &amp; Corporate Risk
+            </span>
+          </div>
+        </a>
+
+        <!-- Links do Menu Superior (Desktop) -->
+        <nav class="hidden xl:flex items-center gap-1" aria-label="Navegação Principal">
+          <a href="/"  data-nav="home" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+            Início
+          </a>
+          <a href="/#quem-somos-section"  data-nav="quem-somos" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+            Quem Somos
+          </a>
+          <a href="/seguro-garantia"  data-nav="garantia" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+            Seguro Garantia
+          </a>
+          <a href="/seguro-de-credito"  data-nav="credito" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+            Seguro de Crédito
+          </a>
+          <a href="/prestamista-imobiliario-cnsp-447"  data-nav="prestamista" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition flex items-center gap-1.5">
+            <span>Prestamista Imobiliário</span>
+            <span class="px-1.5 py-0.5 text-[10px] font-bold bg-gold-500/20 text-gold-300 rounded border border-gold-500/30">CNSP 447</span>
+          </a>
+          <a href="/seguros-de-responsabilidade"  data-nav="responsabilidade" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+            RC, D&amp;O e E&amp;O
+          </a>
+        </nav>
+
+        <!-- Botão CTA no Menu Superior -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:+551135662664" class="hidden lg:inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold-300">
+            <i data-lucide="phone" class="w-4 h-4 text-gold-400"></i>
+            <span>(11) 3566-2664</span>
+          </a>
+          <button onclick="openContactModal('Atendimento Especializado Geral')" class="gold-gradient-btn text-navy-950 font-bold text-sm px-5 py-2.5 rounded-lg inline-flex items-center gap-2 shadow-md">
+            <span>Fale com um Especialista</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Botão Menu Mobile -->
+        <div class="flex xl:hidden items-center gap-2">
+          <button onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-white/5 text-slate-200 hover:text-gold-400 border border-white/10" aria-label="Abrir Menu">
+            <i data-lucide="menu" id="mobile-menu-icon" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-navy-950 border-t border-white/10 px-4 pt-3 pb-6 space-y-2">
+      <a href="/"  class="w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-white hover:bg-white/5 flex items-center justify-between">
+        <span>Início</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-gold-400"></i>
+      </a>
+      <a href="/#quem-somos-section"  class="w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/5 flex items-center justify-between">
+        <span>Quem Somos</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+      </a>
+      <a href="/seguro-garantia"  class="w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/5 flex items-center justify-between">
+        <span>Seguro Garantia</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+      </a>
+      <a href="/seguro-de-credito"  class="w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/5 flex items-center justify-between">
+        <span>Seguro de Crédito (Interno e Exportação)</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+      </a>
+      <a href="/prestamista-imobiliario-cnsp-447"  class="w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/5 flex items-center justify-between">
+        <span>Prestamista Imobiliário (Resolução CNSP 447)</span>
+        <span class="px-2 py-0.5 text-[10px] font-bold bg-gold-500/20 text-gold-300 rounded">CNSP 447</span>
+      </a>
+      <a href="/seguros-de-responsabilidade"  class="w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/5 flex items-center justify-between">
+        <span>RC Geral, D&amp;O e E&amp;O</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+      </a>
+      <div class="pt-2">
+        <button onclick="openContactModal('Atendimento Especializado Mobile'); toggleMobileMenu()" class="w-full gold-gradient-btn text-navy-950 font-bold text-sm py-3 rounded-lg flex items-center justify-center gap-2">
+          <span>Fale com um Especialista</span>
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </header>

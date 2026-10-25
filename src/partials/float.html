@@ -1,0 +1,75 @@
+<!-- ===================================================================== -->
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (COM A MENSAGEM EXATA SOLICITADA)          -->
+  <!-- ===================================================================== -->
+  <a
+    href="tel:+551135662664"
+    aria-label="Ligar para (11) 3566-2664"
+    class="fixed bottom-24 right-6 z-50 group flex items-center gap-3 bg-navy-800 hover:bg-navy-700 text-white font-bold px-4 py-3.5 rounded-full shadow-2xl border border-gold-500/40 transition-all duration-300 hover:scale-105"
+  >
+    <i data-lucide="phone" class="w-5 h-5 text-gold-300"></i>
+    <span class="hidden sm:inline text-sm pr-1">(11) 3566-2664</span>
+  </a>
+  <a
+    href="https://wa.me/5511992545976?text=Ol%C3%A1!%20Vim%20pelo%20site%20segurosfinanceiros.com.br%20e%20gostaria%20de%20conversar%20com%20um%20especialista."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Conversar com um especialista no WhatsApp"
+    class="fixed bottom-6 right-6 z-50 group flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-3.5 rounded-full shadow-2xl border border-emerald-400/40 transition-all duration-300 hover:scale-105"
+  >
+    <span class="relative flex h-3 w-3">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+    </span>
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+    <span class="hidden sm:inline text-sm pr-1">Falar com Especialista</span>
+  </a>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL DE DIAGNÓSTICO / COTAÇÃO B2B                                    -->
+  <!-- ===================================================================== -->
+  <div id="contact-modal" class="fixed inset-0 z-50 hidden bg-navy-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative animate-[fadeSlideIn_0.25s_ease-out]">
+      <button onclick="closeContactModal()" class="absolute top-5 right-5 p-2 rounded-lg text-slate-400 hover:text-navy-900 hover:bg-slate-100">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="space-y-2 mb-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-gold-600">Atendimento Consultivo B2B</span>
+        <h3 id="modal-title" class="text-2xl font-extrabold text-navy-900">Solicitar Diagnóstico ou Cotação</h3>
+        <p class="text-sm text-slate-600">
+          Preencha os dados abaixo para falar diretamente com um especialista financeiro em seguros corporativos.
+        </p>
+      </div>
+
+      <form onsubmit="submitLeadForm(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-navy-900 mb-1">Solução de Interesse</label>
+          <select id="lead-solucao" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-medium text-navy-900 focus:outline-none focus:border-gold-500">
+            <option value="Seguro Garantia (Público, Privado ou Judicial)">Seguro Garantia (Público, Privado ou Judicial)</option>
+            <option value="Seguro de Crédito (Mercado Interno e Exportação)">Seguro de Crédito (Mercado Interno e Exportação)</option>
+            <option value="Seguro Habitacional e Prestamista (Resolução CNSP 447)">Seguro Habitacional e Prestamista (Resolução CNSP 447)</option>
+            <option value="Seguros de Responsabilidade (RC Geral, D&O e E&O)">Seguros de Responsabilidade (RC Geral, D&amp;O e E&amp;O)</option>
+            <option value="Diagnóstico Global de Seguros Financeiros">Diagnóstico Global de Seguros Financeiros</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase text-navy-900 mb-1">Seu Nome / Cargo</label>
+            <input id="lead-nome" type="text" required placeholder="Ex: João Silva - CFO" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-navy-900 mb-1">Empresa / CNPJ</label>
+            <input id="lead-empresa" type="text" required placeholder="Nome da Empresa" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-navy-900 mb-1">Breve contexto da demanda (Opcional)</label>
+          <textarea id="lead-contexto" rows="2" placeholder="Ex: Limite para licitações, carteira de loteamento sob CNSP 447, proteção D&O..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500"></textarea>
+        </div>
+        <button type="submit" class="w-full gold-gradient-btn text-navy-950 font-bold text-sm py-4 rounded-xl flex items-center justify-center gap-2 shadow-gold">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Iniciar Atendimento com Especialista no WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>

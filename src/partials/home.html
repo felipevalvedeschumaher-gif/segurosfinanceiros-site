@@ -1,0 +1,387 @@
+<main id="page-home" >
+    
+    <!-- SEÇÃO 1 — ABERTURA (HERO) -->
+    <section class="relative bg-executive-grid text-white py-16 sm:py-24 lg:py-28 border-b border-white/10 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          
+          <!-- Coluna Esquerda: Textos Hero -->
+          <div class="lg:col-span-7 space-y-6">
+            <!-- Pré-título -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 text-xs sm:text-sm font-semibold tracking-wide">
+              <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+              <span>Seguros financeiros para proteger e impulsionar empresas</span>
+            </div>
+
+            <!-- Sub-headline / Headline Principal -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
+              Soluções em seguros financeiros com <span class="gold-gradient-text">visão estratégica</span> e atendimento especializado.
+            </h1>
+
+            <!-- Texto de apoio -->
+            <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+              Muito além de uma corretora tradicional: somos especialistas financeiros dedicados a estruturar as melhores soluções em <strong class="text-white font-semibold">Seguros de Garantia, Crédito, Prestamista e Responsabilidade</strong> para empresas de todos os portes, em todo o Brasil.
+            </p>
+
+            <!-- Botões (CTA) -->
+            <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <button onclick="openContactModal('Falar com um especialista - Hero Home')" class="gold-gradient-btn text-navy-950 font-bold text-base px-8 py-4 rounded-xl inline-flex items-center justify-center gap-3 shadow-gold">
+                <span>Falar com um especialista</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </button>
+              <a href="#solucoes-home" class="px-6 py-4 rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/15 font-semibold text-sm inline-flex items-center justify-center gap-2 transition">
+                <span>Conhecer as 4 Frentes</span>
+                <i data-lucide="layers" class="w-4 h-4 text-gold-400"></i>
+              </a>
+            </div>
+
+            <!-- Selos Rápidos de Confiança -->
+            <div class="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-xs sm:text-sm text-slate-300">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                <span>Defesa Técnica de Balanço</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                <span>Sem Travar Limite Bancário</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                <span>Atuação 100% Nacional</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Painel Executivo de Engenharia Financeira -->
+          <div class="lg:col-span-5">
+            <div class="bg-navy-800/90 backdrop-blur-xl border border-white/15 rounded-2xl p-6 sm:p-7 shadow-2xl relative">
+              <div class="flex items-center justify-between pb-5 mb-5 border-b border-white/10">
+                <div>
+                  <span class="text-[11px] uppercase tracking-widest text-gold-400 font-bold block">Arquitetura de Risco &amp; Liquidez</span>
+                  <h2 class="text-lg font-bold text-white mt-0.5">Visão de Balanço Corporativo</h2>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 text-xs font-semibold flex items-center gap-1.5">
+                  <i data-lucide="trending-up" class="w-3.5 h-3.5"></i> B2B Advisory
+                </span>
+              </div>
+
+              <!-- 4 Pilares Interativos no Card -->
+              <div class="space-y-3.5">
+                <div class="relative group p-4 rounded-xl bg-navy-900/80 hover:bg-navy-900 border border-white/10 hover:border-gold-500/40 transition cursor-pointer flex items-start gap-3.5"><a href="/seguro-garantia" class="absolute inset-0 z-10 rounded-xl" aria-label="Abrir solução"></a>
+                  <div class="w-10 h-10 rounded-lg bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                    <i data-lucide="scale" class="w-5 h-5"></i>
+                  </div>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <h3 class="text-sm font-bold text-white group-hover:text-gold-300 transition">Seguro Garantia</h3>
+                      <span class="text-[11px] text-emerald-400 font-semibold">Zero Registro SCR</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Licitações, contratos privados e garantias judiciais sem imobilizar o capital de giro.</p>
+                  </div>
+                </div>
+
+                <div class="relative group p-4 rounded-xl bg-navy-900/80 hover:bg-navy-900 border border-white/10 hover:border-gold-500/40 transition cursor-pointer flex items-start gap-3.5"><a href="/seguro-de-credito" class="absolute inset-0 z-10 rounded-xl" aria-label="Abrir solução"></a>
+                  <div class="w-10 h-10 rounded-lg bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                    <i data-lucide="globe-2" class="w-5 h-5"></i>
+                  </div>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <h3 class="text-sm font-bold text-white group-hover:text-gold-300 transition">Seguro de Crédito (Interno e Exportação)</h3>
+                      <span class="text-[11px] text-gold-300 font-semibold">B2B &amp; Global</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Blindagem do contas a receber contra inadimplência e falência no Brasil e exterior.</p>
+                  </div>
+                </div>
+
+                <div class="relative group p-4 rounded-xl bg-navy-900/80 hover:bg-navy-900 border border-white/10 hover:border-gold-500/40 transition cursor-pointer flex items-start gap-3.5"><a href="/prestamista-imobiliario-cnsp-447" class="absolute inset-0 z-10 rounded-xl" aria-label="Abrir solução"></a>
+                  <div class="w-10 h-10 rounded-lg bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                    <i data-lucide="building-2" class="w-5 h-5"></i>
+                  </div>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <h3 class="text-sm font-bold text-white group-hover:text-gold-300 transition">Prestamista Imobiliário</h3>
+                      <span class="text-[11px] px-1.5 py-0.5 rounded bg-gold-500/20 text-gold-300 font-bold">CNSP 447</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Quitação à vista de saldo devedor para loteadoras e incorporadoras (pronto para CRI).</p>
+                  </div>
+                </div>
+
+                <div class="relative group p-4 rounded-xl bg-navy-900/80 hover:bg-navy-900 border border-white/10 hover:border-gold-500/40 transition cursor-pointer flex items-start gap-3.5"><a href="/seguros-de-responsabilidade" class="absolute inset-0 z-10 rounded-xl" aria-label="Abrir solução"></a>
+                  <div class="w-10 h-10 rounded-lg bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                    <i data-lucide="shield-alert" class="w-5 h-5"></i>
+                  </div>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <h3 class="text-sm font-bold text-white group-hover:text-gold-300 transition">Responsabilidade (RC, D&amp;O e E&amp;O)</h3>
+                      <span class="text-[11px] text-slate-300 font-semibold">Blindagem C-Level</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Proteção do patrimônio dos sócios, executivos e da operação contra processos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 2: FAIXA DE AUTORIDADE — SEGURADORAS PARCEIRAS -->
+    <section class="py-16 sm:py-20 bg-white border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-600">Painel Global de Subscrição</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 tracking-tight">
+            Acesso direto às principais seguradoras e resseguradoras do Brasil e do mundo
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+            Conectamos a sua empresa às instituições mais sólidas do mercado para garantir as melhores taxas, limites de crédito elevados e agilidade na emissão de apólices.
+          </p>
+        </div>
+
+        <!-- Grade Executiva com as logos estilizadas das seguradoras -->
+        <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">POTTENCIAL</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Seguradora</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">TOKIO MARINE</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Seguradora</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">COFACE</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">For Trade</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">ALLIANZ</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Trade &amp; Corporate</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">PORTO SEGURO</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Fiança &amp; Garantia</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">CHUBB</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Global Risk</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">ZURICH</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Seguros</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">AIG</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Corporate Lines</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">SOMBRERO</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Seguradora</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">SANCOR</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Seguros</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">ESSOR</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Seguradora</span>
+          </div>
+          <div class="group h-20 rounded-xl bg-slate-50 hover:bg-navy-900 border border-slate-200/90 hover:border-gold-500/40 flex flex-col items-center justify-center px-4 transition duration-200">
+            <span class="font-display font-extrabold text-base tracking-tight text-navy-800 group-hover:text-white">FAIRFAX</span>
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 group-hover:text-gold-400">Brasil &amp; Mais...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 3: O QUE SÃO SEGUROS FINANCEIROS + NOSSO DIFERENCIAL (QUEM SOMOS) -->
+    <section id="quem-somos-section" class="py-20 sm:py-24 bg-slate-50 border-b border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Texto Principal -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-navy-900 text-gold-400 text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="award" class="w-4 h-4"></i>
+              <span>Quem Somos &amp; Nosso Diferencial</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+              O que são Seguros Financeiros e por que contratá-los com especialistas em finanças?
+            </h2>
+
+            <div class="space-y-5 text-slate-700 text-base sm:text-lg leading-relaxed">
+              <p>
+                Os <strong class="text-navy-900 font-semibold">Seguros Financeiros</strong> são ferramentas estratégicas que protegem o ativo mais importante de qualquer negócio: o seu fluxo de caixa e o seu patrimônio. Diferente dos seguros tradicionais (que protegem bens físicos como carros ou galpões), o seguro financeiro garante que contratos sejam cumpridos, que vendas a prazo sejam recebidas e que o capital de giro da empresa não fique travado em bancos ou processos judiciais.
+              </p>
+
+              <div class="p-6 rounded-2xl bg-navy-900 text-white border-l-4 border-gold-400 shadow-lg">
+                <p class="text-base sm:text-lg font-semibold text-gold-300">
+                  O nosso grande diferencial está no nosso DNA: nós somos especialistas financeiros que atuam no mercado de seguros.
+                </p>
+              </div>
+
+              <p>
+                Para aprovar bons limites e conseguir as melhores taxas nas seguradoras, não basta preencher formulários; é preciso saber ler, estruturar e defender o balanço e a saúde financeira da sua empresa perante os comitês de crédito das seguradoras. Nós falamos a língua do mercado financeiro para destravar o potencial do seu negócio.
+              </p>
+            </div>
+          </div>
+
+          <!-- Destaques (Ícones / Bullet Points) -->
+          <div class="lg:col-span-5 space-y-5">
+            <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-executive hover:border-gold-500/50 transition">
+              <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-4">
+                <i data-lucide="building" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-lg font-bold text-navy-900">Para todo tipo de empresa</h3>
+              <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
+                Atendemos desde empresas em fase de expansão até grandes corporações consolidadas no mercado.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-executive hover:border-gold-500/50 transition">
+              <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-4">
+                <i data-lucide="map" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-lg font-bold text-navy-900">Atuação 100% Nacional</h3>
+              <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
+                Atendimento consultivo, ágil e digital para empresas em todos os estados do Brasil.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-executive hover:border-gold-500/50 transition">
+              <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-4">
+                <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-lg font-bold text-navy-900">Visão de Balanço e Crédito</h3>
+              <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
+                Analisamos sua operação para desenhar apólices que preservam suas linhas de crédito bancário e melhoram seus indicadores financeiros.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 4: NOSSAS SOLUÇÕES (RESUMO DAS 4 FRENTES) -->
+    <section id="solucoes-home" class="py-20 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-14">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-600">Portfólio Especializado B2B</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+            Soluções sob medida para cada desafio financeiro da sua operação
+          </h2>
+        </div>
+
+        <!-- 4 Blocos/Cards que levam para as páginas internas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Card 1: Seguro Garantia -->
+          <div class="group bg-slate-50 hover:bg-navy-900 rounded-2xl p-8 border border-slate-200/90 hover:border-gold-500/50 transition-all duration-300 shadow-sm hover:shadow-2xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-navy-900 group-hover:bg-gold-500 text-gold-400 group-hover:text-navy-950 flex items-center justify-center transition">
+                  <i data-lucide="file-check-2" class="w-7 h-7"></i>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-navy-900/5 group-hover:bg-white/10 text-navy-800 group-hover:text-gold-300">
+                  Frente 01
+                </span>
+              </div>
+              <h3 class="text-2xl font-extrabold text-navy-900 group-hover:text-white transition">
+                Seguro Garantia
+              </h3>
+              <p class="mt-3 text-slate-600 group-hover:text-slate-300 text-base leading-relaxed transition">
+                Substitua fianças bancárias e depósitos em dinheiro em licitações, contratos privados e processos judiciais.
+              </p>
+            </div>
+            <div class="mt-8 pt-5 border-t border-slate-200 group-hover:border-white/10">
+              <a href="/seguro-garantia"  class="inline-flex items-center gap-2 font-bold text-sm text-navy-900 group-hover:text-gold-400 transition">
+                <span>Saiba mais</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Seguro de Crédito (Interno e Exportação) -->
+          <div class="group bg-slate-50 hover:bg-navy-900 rounded-2xl p-8 border border-slate-200/90 hover:border-gold-500/50 transition-all duration-300 shadow-sm hover:shadow-2xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-navy-900 group-hover:bg-gold-500 text-gold-400 group-hover:text-navy-950 flex items-center justify-center transition">
+                  <i data-lucide="trending-up" class="w-7 h-7"></i>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-navy-900/5 group-hover:bg-white/10 text-navy-800 group-hover:text-gold-300">
+                  Frente 02
+                </span>
+              </div>
+              <h3 class="text-2xl font-extrabold text-navy-900 group-hover:text-white transition">
+                Seguro de Crédito (Interno e Exportação)
+              </h3>
+              <p class="mt-3 text-slate-600 group-hover:text-slate-300 text-base leading-relaxed transition">
+                Venda a prazo no Brasil e no exterior com a certeza do recebimento, blindando seu caixa contra a inadimplência.
+              </p>
+            </div>
+            <div class="mt-8 pt-5 border-t border-slate-200 group-hover:border-white/10">
+              <a href="/seguro-de-credito"  class="inline-flex items-center gap-2 font-bold text-sm text-navy-900 group-hover:text-gold-400 transition">
+                <span>Saiba mais</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Seguro Prestamista Imobiliário -->
+          <div class="group bg-slate-50 hover:bg-navy-900 rounded-2xl p-8 border border-slate-200/90 hover:border-gold-500/50 transition-all duration-300 shadow-sm hover:shadow-2xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-navy-900 group-hover:bg-gold-500 text-gold-400 group-hover:text-navy-950 flex items-center justify-center transition">
+                  <i data-lucide="building-2" class="w-7 h-7"></i>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-gold-500/20 text-gold-600 group-hover:text-gold-300 border border-gold-500/30">
+                  Resolução CNSP 447
+                </span>
+              </div>
+              <h3 class="text-2xl font-extrabold text-navy-900 group-hover:text-white transition">
+                Seguro Prestamista Imobiliário
+              </h3>
+              <p class="mt-3 text-slate-600 group-hover:text-slate-300 text-base leading-relaxed transition">
+                Para construtoras e loteadoras que fazem o financiamento próprio se protegerem e atenderem a resolução CNSP447.
+              </p>
+            </div>
+            <div class="mt-8 pt-5 border-t border-slate-200 group-hover:border-white/10">
+              <a href="/prestamista-imobiliario-cnsp-447"  class="inline-flex items-center gap-2 font-bold text-sm text-navy-900 group-hover:text-gold-400 transition">
+                <span>Saiba mais</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Seguros de Responsabilidade (RC, D&O e E&O) -->
+          <div class="group bg-slate-50 hover:bg-navy-900 rounded-2xl p-8 border border-slate-200/90 hover:border-gold-500/50 transition-all duration-300 shadow-sm hover:shadow-2xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-navy-900 group-hover:bg-gold-500 text-gold-400 group-hover:text-navy-950 flex items-center justify-center transition">
+                  <i data-lucide="shield" class="w-7 h-7"></i>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-navy-900/5 group-hover:bg-white/10 text-navy-800 group-hover:text-gold-300">
+                  Frente 04
+                </span>
+              </div>
+              <h3 class="text-2xl font-extrabold text-navy-900 group-hover:text-white transition">
+                Seguros de Responsabilidade (RC, D&amp;O e E&amp;O)
+              </h3>
+              <p class="mt-3 text-slate-600 group-hover:text-slate-300 text-base leading-relaxed transition">
+                Proteja o patrimônio dos sócios, diretores e da própria empresa contra processos, falhas operacionais e riscos de gestão.
+              </p>
+            </div>
+            <div class="mt-8 pt-5 border-t border-slate-200 group-hover:border-white/10">
+              <a href="/seguros-de-responsabilidade"  class="inline-flex items-center gap-2 font-bold text-sm text-navy-900 group-hover:text-gold-400 transition">
+                <span>Saiba mais</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>

@@ -1,0 +1,36 @@
+---
+import header from "../partials/header.html?raw";
+import cta from "../partials/cta.html?raw";
+import footer from "../partials/footer.html?raw";
+import floatHtml from "../partials/float.html?raw";
+import headHtml from "../partials/head.html?raw";
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Seguros Financeiros" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <Fragment set:html={headHtml} />
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-navy-950">
+  <Fragment set:html={header} />
+  <slot />
+  <Fragment set:html={cta} />
+  <Fragment set:html={footer} />
+  <Fragment set:html={floatHtml} />
+  <script src="/site.js" defer></script>
+</body>
+</html>
