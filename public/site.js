@@ -6,12 +6,13 @@ lucide.createIcons();
         garantia: "/seguro-garantia",
         credito: "/seguro-de-credito",
         prestamista: "/prestamista-imobiliario-cnsp-447",
-        responsabilidade: "/seguros-de-responsabilidade"
+        responsabilidade: "/seguros-de-responsabilidade",
+        materias: "/materias"
       };
       const path = location.pathname.replace(/\/index\.html$/, "").replace(/\.html$/, "").replace(/\/$/, "") || "/";
       document.querySelectorAll(".nav-link").forEach((el) => {
         const key = el.getAttribute("data-nav");
-        const on = map[key] === path;
+        const on = map[key] === path || (key === "materias" && path.indexOf("/materias/") === 0);
         el.classList.toggle("text-gold-400", on);
         el.classList.toggle("bg-white/5", on);
         el.classList.toggle("text-slate-300", !on);

@@ -1,0 +1,75 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { materias, ordenadas, dataBR } from "../../data/materias.js";
+
+export function getStaticPaths() {
+  return materias.map((m) => ({ params: { slug: m.slug }, props: { materia: m } }));
+}
+
+const { materia: m } = Astro.props;
+const outras = ordenadas().filter((x) => x.slug !== m.slug).slice(0, 3);
+---
+<Layout title={`${m.titulo} | Seguros Financeiros`} description={m.resumo}>
+  <main id="page-materia">
+    <section class="relative bg-executive-grid text-white py-14 sm:py-20 border-b border-white/10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+        <a href="/materias" class="inline-flex items-center gap-1.5 text-sm text-slate-300 hover:text-gold-300">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i> Todas as matérias
+        </a>
+        <span class="block text-xs font-bold uppercase tracking-[0.2em] text-gold-400">{m.categoria}</span>
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-[1.2]">{m.titulo}</h1>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed">{m.resumo}</p>
+        <div class="text-sm text-slate-400">{dataBR(m.data)}{m.leitura ? ` • ${m.leitura}` : ""}</div>
+      </div>
+    </section>
+
+    <section class="py-14 sm:py-16 bg-white">
+      <article class="materia-corpo max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-700 text-base sm:text-lg leading-relaxed" set:html={m.conteudo}></article>
+    </section>
+
+    <section class="pb-16 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-2xl bg-slate-50 border border-slate-200 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-lg font-extrabold text-navy-900">Quer avaliar o seu caso?</h2>
+            <p class="text-sm text-slate-600">Um especialista analisa a sua necessidade e indica a melhor estrutura de garantia.</p>
+          </div>
+          <button onclick="openContactModal('Matéria: ' + document.title)" class="gold-gradient-btn text-navy-950 font-bold text-sm px-6 py-3 rounded-xl inline-flex items-center gap-2 shrink-0">
+            <span>Falar com um especialista</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        {outras.length > 0 && (
+          <div class="mt-12 space-y-4">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-gold-600">Leia também</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {outras.map((o) => (
+                <a href={`/materias/${o.slug}`} class="rounded-xl border border-slate-200 p-4 hover:border-gold-500/50 transition">
+                  <span class="text-[11px] uppercase tracking-widest text-gold-600 font-bold">{o.categoria}</span>
+                  <span class="block text-sm font-bold text-navy-900 mt-1">{o.titulo}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style is:global>
+  .materia-corpo h2 { font-size: 1.5rem; font-weight: 800; color: #071120; margin: 2.2rem 0 0.8rem; line-height: 1.3; }
+  .materia-corpo h3 { font-size: 1.2rem; font-weight: 700; color: #0F1E36; margin: 1.6rem 0 0.6rem; }
+  .materia-corpo p { margin: 0 0 1.1rem; }
+  .materia-corpo ul, .materia-corpo ol { margin: 0 0 1.1rem 1.4rem; }
+  .materia-corpo ul { list-style: disc; }
+  .materia-corpo ol { list-style: decimal; }
+  .materia-corpo li { margin: 0.35rem 0; }
+  .materia-corpo a { color: #AA8218; text-decoration: underline; }
+  .materia-corpo strong { color: #071120; }
+  .materia-corpo blockquote { border-left: 4px solid #C59B27; background: #F8FAFC; padding: 0.9rem 1.2rem; margin: 1.4rem 0; color: #0F1E36; }
+  .materia-corpo table { width: 100%; border-collapse: collapse; margin: 1.4rem 0; font-size: 0.95rem; }
+  .materia-corpo th, .materia-corpo td { border: 1px solid #E2E8F0; padding: 0.6rem 0.8rem; text-align: left; }
+  .materia-corpo th { background: #F8FAFC; color: #071120; }
+</style>

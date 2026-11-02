@@ -13,6 +13,11 @@
         </span>
       </div>
       <div class="flex items-center gap-3 ml-auto">
+        <a href="https://cliente.segurosfinanceiros.com.br/entrar.php" class="inline-flex items-center gap-1.5 text-slate-200 hover:text-gold-300 font-semibold">
+          <i data-lucide="log-in" class="w-3.5 h-3.5 text-gold-400"></i>
+          <span>Entrar / Criar cadastro</span>
+        </a>
+        <span class="text-white/20">|</span>
         <a href="tel:+551135662664" class="inline-flex items-center gap-1.5 text-slate-200 hover:text-gold-300 font-semibold">
           <i data-lucide="phone" class="w-3.5 h-3.5 text-gold-400"></i>
           <span>(11) 3566-2664</span>
@@ -47,36 +52,51 @@
         </a>
 
         <!-- Links do Menu Superior (Desktop) -->
-        <nav class="hidden xl:flex items-center gap-1" aria-label="Navegação Principal">
-          <a href="/"  data-nav="home" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
-            Início
-          </a>
-          <a href="/#quem-somos-section"  data-nav="quem-somos" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+        <nav class="hidden xl:flex items-center gap-0.5" aria-label="Navegação Principal">
+          <a href="/#quem-somos-section"  data-nav="quem-somos" class="nav-link whitespace-nowrap px-2 2xl:px-2.5 py-2 rounded-lg text-[13px] 2xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
             Quem Somos
           </a>
-          <a href="/seguro-garantia"  data-nav="garantia" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+          <a href="/seguro-garantia"  data-nav="garantia" class="nav-link whitespace-nowrap px-2 2xl:px-2.5 py-2 rounded-lg text-[13px] 2xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
             Seguro Garantia
           </a>
-          <a href="/seguro-de-credito"  data-nav="credito" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+          <a href="/seguro-de-credito"  data-nav="credito" class="nav-link whitespace-nowrap px-2 2xl:px-2.5 py-2 rounded-lg text-[13px] 2xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
             Seguro de Crédito
           </a>
-          <a href="/prestamista-imobiliario-cnsp-447"  data-nav="prestamista" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition flex items-center gap-1.5">
+          <a href="/prestamista-imobiliario-cnsp-447"  data-nav="prestamista" class="nav-link whitespace-nowrap px-2 2xl:px-2.5 py-2 rounded-lg text-[13px] 2xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition flex items-center gap-1.5">
             <span>Prestamista Imobiliário</span>
             <span class="px-1.5 py-0.5 text-[10px] font-bold bg-gold-500/20 text-gold-300 rounded border border-gold-500/30">CNSP 447</span>
           </a>
-          <a href="/seguros-de-responsabilidade"  data-nav="responsabilidade" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+          <a href="/seguros-de-responsabilidade"  data-nav="responsabilidade" class="nav-link whitespace-nowrap px-2 2xl:px-2.5 py-2 rounded-lg text-[13px] 2xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
             RC, D&amp;O e E&amp;O
+          </a>
+          <a href="/materias"  data-nav="materias" class="nav-link whitespace-nowrap px-2 2xl:px-2.5 py-2 rounded-lg text-[13px] 2xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">
+            Matérias
           </a>
         </nav>
 
         <!-- Botão CTA no Menu Superior -->
         <div class="hidden sm:flex items-center gap-3">
-          <a href="tel:+551135662664" class="hidden lg:inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold-300">
-            <i data-lucide="phone" class="w-4 h-4 text-gold-400"></i>
-            <span>(11) 3566-2664</span>
-          </a>
-          <button onclick="openContactModal('Atendimento Especializado Geral')" class="gold-gradient-btn text-navy-950 font-bold text-sm px-5 py-2.5 rounded-lg inline-flex items-center gap-2 shadow-md">
-            <span>Fale com um Especialista</span>
+          <div class="relative group">
+            <button type="button" class="whitespace-nowrap inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold-300 px-3 py-2.5 rounded-lg border border-white/15 hover:border-gold-500/40 bg-white/5 transition" aria-haspopup="true">
+              <i data-lucide="building-2" class="w-4 h-4 text-gold-400"></i>
+              <span>Entrar</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400"></i>
+            </button>
+            <div class="absolute right-0 top-full pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition z-50">
+              <div class="rounded-xl bg-navy-950 border border-white/15 shadow-2xl p-2">
+                <a href="https://cliente.segurosfinanceiros.com.br/entrar.php" class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5">
+                  <i data-lucide="log-in" class="w-5 h-5 text-gold-400 mt-0.5"></i>
+                  <span><span class="block text-sm font-bold text-white">Entrar</span><span class="block text-xs text-slate-400">Acompanhe pedidos, cotações e depósito recursal</span></span>
+                </a>
+                <a href="https://cliente.segurosfinanceiros.com.br/cadastrar.php" class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5">
+                  <i data-lucide="user-plus" class="w-5 h-5 text-gold-400 mt-0.5"></i>
+                  <span><span class="block text-sm font-bold text-white">Criar cadastro</span><span class="block text-xs text-slate-400">Cadastre a empresa para pedir limite e cotações</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button onclick="openContactModal('Atendimento Especializado Geral')" class="whitespace-nowrap gold-gradient-btn text-navy-950 font-bold text-sm px-5 py-2.5 rounded-lg inline-flex items-center gap-2 shadow-md">
+            <span class="hidden 2xl:inline">Fale com um Especialista</span><span class="2xl:hidden">Fale conosco</span>
             <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
           </button>
         </div>
@@ -116,6 +136,18 @@
         <span>RC Geral, D&amp;O e E&amp;O</span>
         <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
       </a>
+      <a href="/materias"  class="w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-300 hover:bg-white/5 flex items-center justify-between">
+        <span>Matérias</span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+      </a>
+      <div class="mt-2 pt-3 border-t border-white/10 grid grid-cols-2 gap-2">
+        <a href="https://cliente.segurosfinanceiros.com.br/entrar.php" class="px-4 py-3 rounded-lg bg-white/5 border border-white/15 text-sm font-semibold text-white flex items-center justify-center gap-2">
+          <i data-lucide="log-in" class="w-4 h-4 text-gold-400"></i><span>Entrar</span>
+        </a>
+        <a href="https://cliente.segurosfinanceiros.com.br/cadastrar.php" class="px-4 py-3 rounded-lg bg-white/5 border border-gold-500/40 text-sm font-semibold text-gold-300 flex items-center justify-center gap-2">
+          <i data-lucide="user-plus" class="w-4 h-4"></i><span>Criar cadastro</span>
+        </a>
+      </div>
       <div class="pt-2">
         <button onclick="openContactModal('Atendimento Especializado Mobile'); toggleMobileMenu()" class="w-full gold-gradient-btn text-navy-950 font-bold text-sm py-3 rounded-lg flex items-center justify-center gap-2">
           <span>Fale com um Especialista</span>
