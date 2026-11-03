@@ -18,6 +18,48 @@
  */
 export const materias = [
 {
+  slug: "carteira-propria-sem-seguro-padronizado-recebivel-securitizar",
+  titulo: "Carteira própria sem seguro padronizado é difícil de securitizar",
+  resumo: "Para quem financia direto, o seguro habitacional transforma contratos dispersos em lastro homogêneo para cessão de recebíveis ou emissão de CRI.",
+  categoria: "Prestamista Imobiliário (CNSP 447)",
+  data: "2026-11-03",
+  leitura: "4 min de leitura",
+  autor: "Seguros Financeiros",
+  conteudo: `<p>Para a loteadora ou incorporadora que vende com financiamento direto, a carteira própria costuma ser tratada apenas como um contas a receber de longo prazo. Para o mercado de capitais, porém, ela é lida como lastro. O seguro habitacional não serve só para cobrir morte do comprador ou dano ao imóvel: é o que transforma centenas de contratos diferentes em um ativo homogêneo que o investidor consegue analisar. Carteira com seguro heterogêneo, ou sem apólice, vale menos para quem compra recebíveis ou estrutura Certificados de Recebíveis Imobiliários (CRI), mesmo adimplente.</p>
+<h2>O que o investidor analisa na elegibilidade da carteira própria</h2>
+<p>Pela Lei nº 14.430, de 3 de agosto de 2022, os direitos creditórios que lastreiam os Certificados de Recebíveis são previamente identificados e atendem aos critérios de elegibilidade do termo de securitização (art. 20, § 2º), que também descreve o lastro e eventuais garantias (art. 22, incisos XII e XIV).</p>
+<p>Como análise financeira, quem avalia uma carteira olha o conjunto, não contrato por contrato. Contratos com seguros diferentes, ou sem cobertura, criam riscos operacionais e jurídicos que não se medem em bloco e reduzem a previsibilidade do fluxo de caixa diante de sinistros.</p>
+<h2>Como a Resolução CNSP 447 padroniza o lastro imobiliário</h2>
+<p>O Seguro Habitacional em Apólices de Mercado (SH/AM), regido pela Resolução CNSP nº 447, de 10 de outubro de 2022, padroniza essa estrutura. Na apólice coletiva, o próprio financiador é o estipulante (art. 2º, inciso VI) e o beneficiário obrigatório da cobertura de Morte e Invalidez Permanente (MIP), recebendo a indenização para amortizar ou quitar a dívida (art. 32).</p>
+<p>A norma alinha os parâmetros da apólice ao fluxo dos contratos:</p>
+<ul>
+<li>Coberturas mínimas de MIP e Danos Físicos ao Imóvel (DFI), admitindo-se só MIP em financiamento de terreno ou lote urbanizado, e só DFI para quem constrói até os contratos com os promitentes compradores (art. 6º e § 1º).</li>
+<li>Limite Máximo de Garantia (LMG) do MIP igual ao saldo devedor mensal (art. 18) e do DFI igual à avaliação inicial atualizada (art. 19), com vigência idêntica ao prazo do financiamento (art. 14).</li>
+<li>Vedação de franquia (art. 24) e de carência na adesão inicial para MIP e DFI, salvo as exceções da própria resolução: dois anos para suicídio (art. 25, parágrafo único) e até doze meses para MIP em alteração de composição de renda (art. 26).</li>
+</ul>
+<p>Pelo art. 16, a apólice segue em vigor mesmo com o segurado inadimplente no prêmio, cabendo ao estipulante pagá-lo (§ 1º). Contudo, o não pagamento pelo estipulante na data devida desobriga a seguradora de indenizar (§ 2º), o que exige controle rigoroso da tesouraria.</p>
+<h2>A transferência da carteira e os limites reais do seguro</h2>
+<p>Na cessão de créditos ou transferência de carteira entre financiadores, a Resolução CNSP nº 447 veda exigir novas Declarações Pessoais de Saúde (DPS), recusar segurados ou reiniciar carências (art. 36). Isso garante continuidade de cobertura ao lastro cedido, desde que a carteira original tenha nascido dentro do SH/AM.</p>
+<p>O financeiro deve, porém, considerar os limites do instrumento. O seguro cobre morte, invalidez permanente e riscos físicos definidos (art. 8º), mas não inadimplência por perda de renda ou desistência do comprador — risco de crédito que continua na carteira. O MIP exclui doença preexistente conhecida e não declarada na DPS (art. 7º, § 3º). Além disso, padronizar a apólice não garante emissão, taxa nem interesse de investidor, e para carteiras pequenas a cessão a um banco ou o carregamento no balanço pode fazer mais sentido do que um CRI.</p>
+<blockquote><p>Na venda com financiamento direto, a apólice coletiva não protege apenas o imóvel ou a família do comprador; ela padroniza juridicamente o fluxo de recebíveis para que a carteira possa ser analisada como ativo financeiro.</p></blockquote>
+<h2>Perguntas para avaliar a governança da sua carteira</h2>
+<ul>
+<li>Todos os contratos da carteira têm o mesmo seguro, a mesma vigência e o próprio financiador como estipulante e beneficiário do MIP?</li>
+<li>Quem paga o prêmio quando o comprador atrasa, e a tesouraria controla isso para não desobrigar a seguradora de indenizar (art. 16, § 2º)?</li>
+<li>A coleta e a guarda das Declarações Pessoais de Saúde (DPS) sobreviveriam a uma diligência de lastro hoje?</li>
+<li>Os contratos de venda refletem as regras de atualização de saldo e de vigência da Resolução CNSP nº 447?</li>
+</ul>
+<h2>Para fechar</h2>
+<p>Padronizar o seguro habitacional apenas quando surge a necessidade de caixa expõe a empresa a reenquadramentos difíceis e perda de valor na negociação dos recebíveis. Antes de precisar vender a carteira ou emitir um CRI, vale revisar a estrutura das apólices e dos contratos com especialistas enquanto o ativo ainda está sob gestão direta.</p>
+<h2>Fontes</h2>
+<ul>
+<li>CNSP / Imprensa Nacional — Resolução CNSP nº 447, de 10 de outubro de 2022 — <a href="https://www.in.gov.br/web/dou/-/resolucao-cnsp-n-447-de-10-de-outubro-de-2022-435857613">https://www.in.gov.br/web/dou/-/resolucao-cnsp-n-447-de-10-de-outubro-de-2022-435857613</a></li>
+<li>SUSEP — Resolução CNSP nº 447/2022 (texto integral em PDF) — <a href="https://www.gov.br/susep/pt-br/arquivos/arquivos-dos-documentos-e-publicacoes/arquivos-normas-em-consulta-publica/normas-publicadas/resolucaocnsp447.pdf/@@display-file/file">https://www.gov.br/susep/pt-br/arquivos/arquivos-dos-documentos-e-publicacoes/arquivos-normas-em-consulta-publica/normas-publicadas/resolucaocnsp447.pdf/@@display-file/file</a></li>
+<li>SUSEP — Seguro Habitacional (orientações oficiais sobre SH/AM, MIP e DFI) — <a href="https://www.gov.br/susep/pt-br/assuntos/meu-futuro-seguro/seguros-previdencia-e-capitalizacao/seguros/seguro-habitacional">https://www.gov.br/susep/pt-br/assuntos/meu-futuro-seguro/seguros-previdencia-e-capitalizacao/seguros/seguro-habitacional</a></li>
+<li>Planalto — Lei nº 14.430, de 3 de agosto de 2022 — <a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14430.htm">https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14430.htm</a></li>
+</ul>`
+},
+{
   slug: "custo-deposito-recursal-nao-e-valor-depositado",
   titulo: "O custo do depósito recursal não é o valor depositado",
   resumo: "Na contabilidade, o depósito recursal aparece como ativo recuperável. Na tesouraria, o efeito real está no custo do caixa imobilizado na carteira.",
